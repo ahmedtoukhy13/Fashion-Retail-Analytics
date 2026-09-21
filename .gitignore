@@ -1,0 +1,17 @@
+# Original data files are not uploaded to GitHub
+data/*.csv
+
+# Database credentials and local environment settings
+.env
+
+# Python temporary files
+__pycache__/
+*.py[cod]
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Tableau temporary files
+*.twb~
+*.log
