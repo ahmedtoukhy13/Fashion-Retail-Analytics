@@ -56,8 +56,9 @@ SELECT
     COUNT(DISTINCT order_id) AS total_orders,
     SUM(gross_profit) AS gross_profit,
     ROUND(100 * SUM(gross_profit) / NULLIF(SUM(recognized_sales_amount), 0), 1) AS gross_margin_pct,
-ROUND(
-    SUM(recognized_sales_amount) /
-    NULLIF(COUNT(DISTINCT order_id) FILTER (WHERE sales_status = 'Recognized'), 0),
-    2
-) AS average_order_valueFROM analytics.fact_sales_analysis;
+    ROUND(
+        SUM(recognized_sales_amount) /
+        NULLIF(COUNT(DISTINCT order_id) FILTER (WHERE sales_status = 'Recognized'), 0),
+        2
+    ) AS average_order_value
+FROM analytics.fact_sales_analysis;
