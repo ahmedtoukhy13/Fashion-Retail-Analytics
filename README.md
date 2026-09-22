@@ -48,6 +48,7 @@ CSV Files → Python → PostgreSQL Raw → SQL Cleaning → Analytics Views →
 | Gross Profit | 74.4M EGP |
 | Gross Margin | 46.9% |
 | Average Order Value | 1,627 EGP |
+> **AOV Note:** يتم حساب Average Order Value باستخدام Recognized Orders فقط، مع استبعاد الطلبات الملغاة أو التي لم تكتمل.
 
 ## Key Insights | أهم النتائج
 
